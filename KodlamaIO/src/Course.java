@@ -10,7 +10,7 @@ public class Course {
 	
 	
 
-	private int Progress;
+	private int Progress;    /// Commit Changes
 	
 	private CourseInstructor Instructor;
 	/////////////////////////////////////////////
