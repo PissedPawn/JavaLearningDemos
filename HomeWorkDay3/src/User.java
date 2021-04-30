@@ -5,10 +5,6 @@ public class User {
 	private String name;
 	private String lastName;
 	
-	public User()
-	{
-		
-	}
 	
 	
 
