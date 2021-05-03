@@ -3,7 +3,7 @@ package interfaceAndAbstract;
 public class Customer implements IEntity {
 
 	private int id;
-	private String FirstName;
+	private String FirstName; 
 	private String LastName;
 	private int YearOfBirth;
 	private String IdentityNo;
