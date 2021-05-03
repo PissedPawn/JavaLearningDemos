@@ -7,7 +7,7 @@ public class NewIdentityCheckServiceAdapter implements ICustomerCheckService {
 	if(customer.getFirstName()=="Vuqar"&&
 			customer.getLastName()=="Rahimli"&&
 			customer.getYearOfBirth()==1998&&
-			customer.getIdentityNo()=="123456789")
+			customer.getIdentityNo()==123456789)
 		return true;
 	else 
 		return false;

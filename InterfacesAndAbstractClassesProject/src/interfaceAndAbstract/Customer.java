@@ -3,12 +3,12 @@ package interfaceAndAbstract;
 public class Customer implements IEntity {
 
 	private int id;
-	private String FirstName; 
+	private String FirstName;
 	private String LastName;
 	private int YearOfBirth;
-	private String IdentityNo;
-	
-	public Customer(int id, String firstName, String lastName, int yearOfBirth, String identityNo) {
+	private long IdentityNo;
+
+	public Customer(int id, String firstName, String lastName, int yearOfBirth, long identityNo) {
 		super();
 		this.id = id;
 		FirstName = firstName;
@@ -45,17 +45,19 @@ public class Customer implements IEntity {
 		return YearOfBirth;
 	}
 
-	public void setYearOfBirth(int yearOfBirth) {
+	
+public void setYearOfBirth(int yearOfBirth) {
 		YearOfBirth = yearOfBirth;
 	}
 
-	public String getIdentityNo() {
+
+	public long getIdentityNo() {
 		return IdentityNo;
 	}
+	
 
-	public void setIdentityNo(String identityNo) {
+	public void setIdentityNo(long identityNo) {
 		IdentityNo = identityNo;
 	}
-	
-	
+
 }

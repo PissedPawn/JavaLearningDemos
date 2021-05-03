@@ -1,5 +1,7 @@
 package interfaceAndAbstract;
 
+import java.rmi.RemoteException;
+
 public class StarbucksCustomerManager extends BaseCustomerManager{
 
 
@@ -12,13 +14,18 @@ public class StarbucksCustomerManager extends BaseCustomerManager{
 	
 	
 	@Override
-	public void Register(Customer customer) {
+	public void Register(Customer customer)  {
 		
-		if(customerCheckService.CheckIfReal(customer))
-		super.Register(customer);
-		
-		else
-			System.out.println("Values are not correct.");
+		try {
+			if(customerCheckService.CheckIfReal(customer))
+			super.Register(customer);
+			
+			else
+				System.out.println("Values are not correct.");
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
